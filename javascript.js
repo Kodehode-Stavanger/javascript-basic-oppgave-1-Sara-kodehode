@@ -30,6 +30,12 @@ Try to use both the let and const keywords
 
 //your code here
 
+const telephoneNumber = 12345;
+let myText = "Hello";
+let myBoolen = true;
+let myCar = { carBrand: "Ionic", modelYear: 2020 };
+const myFamiley = ["Ahmmed", "Mostafa", "Yara"];
+console.log(myFamiley);
 /****************************************************************************** 
 ASSIGNMENT 3
 
@@ -38,6 +44,17 @@ as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
 //your code here
+
+let x = 2 + 4;
+let y = 3 + 9;
+let z = y / x;
+// console.log(z);
+z *= 2;
+// console.log(z);
+z++;
+z++;
+console.log(z);
+console.log(z == x);
 
 /****************************************************************************** 
 ASSIGNMENT 4
@@ -57,13 +74,28 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly 
 ******************************************************************************/
 
-let userName = "";
+let userName = "Ahmed";
 let userAge = 18;
-let userIsLoggedIn = false;
+let userIsLoggedIn = true;
 let userIsBlocked = false;
 let goToPage = "";
 
 //your code here
+if (userName !== "" && userAge >= 18 && userIsBlocked === false) {
+  (userIsLoggedIn = true), (goToPage = "/home");
+  console.log("welcome");
+} else {
+  console.log("Error");
+}
+console.log(goToPage);
+
+// Ternary
+const allAreTrue =
+  userName !== "" && userAge >= 18 && userIsBlocked === false
+    ? ((goToPage = "/home"), "welcome")
+    : "Error";
+console.log(allAreTrue);
+console.log(goToPage);
 
 /******************************************************************************
 ASSIGNMENT 5
@@ -81,3 +113,5 @@ to see that your conditional is working.
 const userMale = false;
 
 //your code here
+const userTitle = userMale === true ? "Mr." : "Mrs.";
+console.log(userTitle);
